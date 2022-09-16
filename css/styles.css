@@ -4,6 +4,7 @@
     --title-text-color: #212121;
     --primary-white-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
+    --btn-bg-color: #F5F4FA;
 }
 
 body {
@@ -41,10 +42,10 @@ body {
 
 .site-nav .link {
     color: var(--title-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .nav-item .current-page {
@@ -54,7 +55,9 @@ body {
 .nav-item .link:hover,
 .nav-item .link:focus,
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.contact-list .link:hover,
+.contact-list .link:focus {
     color: var(--accent-color);
 }
 
@@ -85,7 +88,9 @@ body {
 .hero-btn {
     color: var(--primary-white-color);
     background-color: #2196F3;
+    border: none;
 
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -139,6 +144,7 @@ body {
 .addres-text {
     color: var(--primary-white-color);
 
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -148,4 +154,34 @@ body {
 
     font-size: 14px;
     line-height: 1.71;    
+}
+
+.work-card .card-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.work-card .card-text {
+    line-height: 1.88;
+}
+
+.btn-list .btn {
+    color: var(--title-text-color);
+    background-color: var(--btn-bg-color);
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.btn-list .btn:hover,
+.btn-list .btn:focus {
+    background-color: var(--accent-color);
 }
